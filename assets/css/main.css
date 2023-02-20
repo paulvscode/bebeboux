@@ -721,6 +721,40 @@ section {
   font-size: 0.9rem;
 }
 
+.p-project-description {
+  margin: 0 auto 1rem auto;
+  width: 60%;
+  background-color: #559ca90a;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.owl {
+  width: 20%;
+}
+
+.pictos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pictos-container > h4 {
+  font-size: 1rem;
+  width: 50%;
+}
+
+.descriptif-pictos {
+  margin-top: 1rem;
+  text-align: center;
+  color: #7b7b7b !important;
+}
+
+.pictos-harmony {
+  width: 15%;
+}
+
 @-webkit-keyframes pulsate-btn {
   0% {
     transform: scale(0.6, 0.6);
@@ -797,7 +831,7 @@ section {
   margin-bottom: 30px;
   font-size: 32px;
   margin-bottom: 30px;
-  background: rgba(206, 18, 18, 0.1);
+  background: rgba(253, 253, 253, 0.1);
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -1131,6 +1165,8 @@ section {
   color: #fff;
   border-radius: 50px;
   transition: all ease-in-out 0.4s;
+
+  border: 1px solid var(--color-primary);
 }
 
 .cta-project i {
@@ -1140,7 +1176,6 @@ section {
 .cta-project:hover {
   color: var(--color-primary);
   background: #fff;
-  border: 1px solid var(--color-primary);
 }
 
 /*--------------------------------------------------------------
