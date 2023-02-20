@@ -712,6 +712,15 @@ section {
   transform: scale(20);
 }
 
+.extra-space-nursery {
+  display: flex;
+  flex-direction: column;
+}
+
+.extra-space-nursery > span {
+  font-size: 0.9rem;
+}
+
 @-webkit-keyframes pulsate-btn {
   0% {
     transform: scale(0.6, 0.6);
@@ -1112,8 +1121,32 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Project Section
+--------------------------------------------------------------*/
+
+.cta-project {
+  display: inline-block;
+  background: var(--color-primary);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.cta-project i {
+  font-size: 14px;
+}
+
+.cta-project:hover {
+  color: var(--color-primary);
+  background: #fff;
+  border: 1px solid var(--color-primary);
+}
+
+/*--------------------------------------------------------------
 # team Section
 --------------------------------------------------------------*/
+
 .team .chef-member {
   overflow: hidden;
   text-align: center;
