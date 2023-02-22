@@ -722,7 +722,7 @@ section {
 }
 
 .p-project-description {
-  margin: 0 auto 1rem auto;
+  margin: 0 auto 2rem auto;
   width: 60%;
   background-color: #559ca90a;
   border-radius: 10px;
@@ -1103,7 +1103,7 @@ section {
 
 .events .event-item:before {
   content: "";
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.2);
   position: absolute;
   inset: 0;
 }
@@ -1153,6 +1153,13 @@ section {
 
 .events .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
+}
+
+.overlay-text-event {
+  background-color: #c4c4c45e;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+  border-radius: 5px;
 }
 
 /*--------------------------------------------------------------
