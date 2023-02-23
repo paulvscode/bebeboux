@@ -625,6 +625,21 @@ section {
     padding: 1rem;
     text-align: center;
   }
+
+  .responsive-header-text {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .responsive-header-gallery {
+    width: 64%;
+    margin: 0 auto;
+  }
+
+  .responsive-header-contact {
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 
 /*--------------------------------------------------------------
