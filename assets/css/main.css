@@ -586,9 +586,13 @@ section {
   }
 
   .sub-logo-description {
-    display: block;
+    display: none;
     font-size: 0.8rem;
     text-align: end;
+  }
+
+  #logo-content {
+    width: 40%;
   }
 
   .why-us .icon-box {
