@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  "use strict";
+  ("use strict");
 
   /**
    * Preloader
@@ -238,4 +238,24 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("load", () => {
     aos_init();
   });
+
+  /**
+   * Logo Switch
+   */
+  const logoSwitchButton = document.getElementById("logo-span");
+  const logoImageContent = document.getElementById("logo-content");
+  logoImageContent.src =
+    "assets/img/logos/cropped/" + "logo" + 1 + "-removebg-preview.png";
+  let incLogo = 1;
+  logoSwitchButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (incLogo === 4) {
+      incLogo = 0;
+    }
+    incLogo++;
+    logoImageContent.src =
+      "assets/img/logos/cropped/" + "logo" + incLogo + "-removebg-preview.png";
+    console.log(logoSwitchButton);
+  });
+  function logoSwitch() {}
 });
