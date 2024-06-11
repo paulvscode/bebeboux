@@ -258,7 +258,7 @@ section {
   background: #fff;
   transition: all 0.5s;
   z-index: 997;
-  height: 90px;
+  height: 120px;
   border-bottom: 1px solid #fff;
 }
 
@@ -270,7 +270,7 @@ section {
 
 #logo-content {
   max-height: 100%;
-  width: 60%;
+  width: 70%;
 }
 
 .header.sticked {
@@ -304,6 +304,7 @@ section {
   margin-left: 30px;
   border-radius: 50px;
   transition: 0.3s;
+  font-weight: 600;
 }
 
 .header .btn-rdv:hover,
@@ -319,6 +320,32 @@ section {
 .sub-logo-description {
   display: none;
 }
+
+/*--------------------------------------------------------------
+# Banner
+--------------------------------------------------------------*/
+
+.banner-container {
+    padding: 0;
+    max-width: 1320px;
+}
+
+.banner-image-activite {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+    opacity: 0.8;
+    transition: .3s;
+}
+
+.banner-image-activite:hover {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+    opacity: 1;
+    transition: .3s;
+}
+
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -789,6 +816,7 @@ section {
 .extra-space-nursery {
   display: flex;
   flex-direction: column;
+  margin: 0;
 }
 
 .extra-space-nursery > span {
@@ -817,7 +845,7 @@ section {
 
 .pictos-container > h4 {
   font-size: 1rem;
-  width: 50%;
+  width: 100%;
 }
 
 .descriptif-pictos {
@@ -828,6 +856,7 @@ section {
 
 .pictos-harmony {
   width: 15%;
+  margin-right: .2rem;
 }
 
 @-webkit-keyframes pulsate-btn {
@@ -1273,42 +1302,9 @@ section {
 /*--------------------------------------------------------------
 # Gallery Section
 --------------------------------------------------------------*/
-.gallery {
-  overflow: hidden;
-}
-
-.gallery .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #d1d1d7;
-  opacity: 1;
-}
-
-.gallery .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
-}
-
-.gallery .swiper-slide-active {
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-  .gallery .swiper-wrapper {
-    padding: 40px 0;
-  }
-
-  .gallery .swiper-slide-active {
-    border: 6px solid var(--color-primary);
-    padding: 4px;
-    background: #fff;
-    z-index: 1;
-    transform: scale(1.2);
-  }
+.carousel-item img {
+    max-height: 600px;
+    object-fit: cover;
 }
 
 /*--------------------------------------------------------------
