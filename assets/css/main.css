@@ -817,6 +817,7 @@ section {
   display: flex;
   flex-direction: column;
   margin: 0;
+  text-align: center;
 }
 
 .extra-space-nursery > span {
