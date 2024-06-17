@@ -301,7 +301,7 @@ section {
   color: #fff;
   background: var(--color-primary);
   padding: 8px 20px;
-  margin-left: 30px;
+  margin-left: 0;
   border-radius: 50px;
   transition: 0.3s;
   font-weight: 600;
@@ -1284,7 +1284,6 @@ section {
 }
 
 .team .team-member .member-info p {
-  font-style: italic;
   font-size: 14px;
   padding-top: 15px;
   line-height: 26px;
@@ -1485,17 +1484,22 @@ section {
 }
 
 .hero .btn-rdv {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 36px;
-  border-radius: 50px;
-  transition: 0.5s;
-  color: #fff;
-  background: var(--color-primary);
-  box-shadow: 0 8px 28px rgba(85, 156, 169, 0.2);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #fff;
+    background: var(--color-primary);
+    box-shadow: 0 8px 28px rgba(85, 156, 169, 0.2);
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: visible; /* Ensure overflow is visible */
+    line-height: 1.5; /* Adjust line height as necessary */
+    margin-left: 30px;
 }
+
 
 .hero .btn-rdv:hover {
   background: rgba(85, 156, 169, 0.8);

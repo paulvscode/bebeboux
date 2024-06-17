@@ -75,7 +75,7 @@
         </nav>
         <!-- .navbar -->
 
-        <a class="btn-rdv" href="#">Pré-inscription</a>
+        <a class="btn-rdv" href="https://opticreche.fr/inscriptions/questionnaire/bebeboux">Pré-inscription</a>
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       </div>
@@ -118,7 +118,7 @@
         <div class="container" data-aos="fade-up">
           <div class="section-header responsive-header-text">
             <h2>Nos Micro-Crèches</h2>
-            <p>Trois micro crèches au <span>Coeur du Havre</span></p>
+            <p>Trois micro-crèches au <span>Coeur du Havre</span></p>
           </div>
           <div class="container" data-aos="fade-up">
             <div class="row gy-4">
@@ -661,13 +661,9 @@
           </div>
 
           <div class="mb-3">
-            <iframe
-              style="border: 0; width: 100%; height: 350px"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10365.863327015515!2d0.1132766!3d49.4945965!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb70478251d6a2575!2zQsOpYsOpYm91eCAxIC0gMg!5e0!3m2!1sfr!2sfr!4v1670234238005!5m2!1sfr!2sfr"
-              frameborder="0"
-              allowfullscreen
-            ></iframe>
+            <iframe style="border: 0; width: 100%; height: 350px" src="https://www.google.com/maps/d/u/0/embed?mid=10J4sqseADd4u_fS_Oi0VBSEU7L-XDDU&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
           </div>
+
           <!-- End Google Maps -->
 
           <div class="row gy-4">
@@ -687,7 +683,8 @@
                 <i class="icon bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Nous envoyer un email</h3>
-                  <p>bebeboux@mail.com</p>
+                  <p><span id="email"></span></p>
+
                 </div>
               </div>
             </div>
@@ -698,7 +695,7 @@
                 <i class="icon bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Nous appeler</h3>
-                  <p>0606060606</p>
+                  <p><span class="phone-replacement"></span></p>
                 </div>
               </div>
             </div>
@@ -787,53 +784,6 @@
     <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
       <div class="container">
-        <div class="row gy-3">
-          <div class="col-lg-3 col-md-6 d-flex">
-            <i class="bi bi-geo-alt icon"></i>
-            <div>
-              <h4>Adresse</h4>
-              <p>
-                35 Rue Lord Kitchener, <br />
-                76600 Le Havre<br />
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links d-flex">
-            <i class="bi bi-telephone icon"></i>
-            <div>
-              <h4>Informations</h4>
-              <p>
-                <strong>Téléphone:</strong> 0606060606<br />
-                <strong>Email:</strong> bebeboux@mail.com<br />
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links d-flex">
-            <i class="bi bi-clock icon"></i>
-            <div>
-              <h4>Horaires d'ouverture</h4>
-              <p>
-                <strong>Lundi - Vendredi:</strong> 9h - 18h;
-                <strong>Samedi | Dimanche:</strong> Fermé
-              </p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Nous suivre sur les réseaux</h4>
-            <div class="social-links d-flex">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
         <div class="copyright">
           &copy; Copyright <strong><span>Bébéboux</span></strong
           >. Tous droits réservés
@@ -863,9 +813,22 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+      var user = 'contact';
+      var domain = 'bebeboux.fr';
+      var mailtoLink = 'mailto:' + user + '@' + domain;
+      
+      document.getElementById('email').innerHTML = '<a href="' + mailtoLink + '">' + user + '@' + domain + '</a>';
+
+      var phoneNumber = '07 66 81 43 30';
+      var hiddenPhoneNumber = phoneNumber.replace('66', '<span style="display:none;">REMOVE</span>');
+      var elements = document.getElementsByClassName('phone-replacement');
+
+      for (var i = 0; i < elements.length; i++) {
+        elements[i].innerHTML = hiddenPhoneNumber;
+      }
+    
+    </script>
   </body>
 
-  <!-- Owl icons created by Smashicons -->
-  <!-- Sign-language icons created by Freepik -->
-  <!-- Child-running icons created by DariusDan -->
 </html>
