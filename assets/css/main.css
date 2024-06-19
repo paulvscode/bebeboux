@@ -1506,6 +1506,13 @@ section {
   box-shadow: 0 8px 28px rgba(85, 156, 169, 0.45);
 }
 
+/* cta mobile only */
+@media (min-width: 992px) {
+  .navbar .mobile-only {
+    display: none;
+  }
+}
+
 .hero .btn-watch-video {
   font-size: 16px;
   transition: 0.5s;
