@@ -259,3 +259,52 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   function logoSwitch() {}
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".php-email-form");
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const loading = document.querySelector(".loading");
+    const errorMessage = document.querySelector(".error-message");
+    const sentMessage = document.querySelector(".sent-message");
+
+    loading.style.display = "block";
+    errorMessage.style.display = "none";
+    sentMessage.style.display = "none";
+
+    const formData = new FormData(form);
+
+    fetch(form.action, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => {
+        loading.style.display = "none";
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error("Network response was not ok");
+        }
+      })
+      .then((data) => {
+        if (data.success) {
+          sentMessage.style.display = "block";
+          form.reset();
+        } else {
+          errorMessage.style.display = "block";
+          errorMessage.textContent =
+            data.message ||
+            "Une erreur est survenue et votre message n'a pas pu être envoyé.";
+        }
+      })
+      .catch((error) => {
+        loading.style.display = "none";
+        errorMessage.style.display = "block";
+        errorMessage.textContent =
+          "Il y a eu un problème avec votre envoi. Veuillez réessayer.";
+      });
+  });
+});
+

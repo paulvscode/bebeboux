@@ -19,6 +19,8 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inter&family=Noto+Sans&family=Open+Sans&display=swap">
+
 
     <!-- Vendor CSS Files -->
     <link
@@ -71,12 +73,22 @@
             <li><a href="#project">Notre projet</a></li>
             <li><a href="#team">Notre équipe</a></li>
             <li><a href="#tarifs">Tarifs et aides</a></li>
-            <li class="mobile-only"><a class="btn-cta-mobile-only" href="https://opticreche.fr/inscriptions/questionnaire/bebeboux">Pré-inscription</a></li>
+            <li class="mobile-only">
+              <a
+                class="btn-cta-mobile-only"
+                href="https://opticreche.fr/inscriptions/questionnaire/bebeboux"
+                >Pré-inscription</a
+              >
+            </li>
           </ul>
         </nav>
         <!-- .navbar -->
 
-        <a class="btn-rdv" href="https://opticreche.fr/inscriptions/questionnaire/bebeboux">Pré-inscription</a>
+        <a
+          class="btn-rdv"
+          href="https://opticreche.fr/inscriptions/questionnaire/bebeboux"
+          >Pré-inscription</a
+        >
         <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
         <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       </div>
@@ -236,7 +248,7 @@
               <br />
             </p>
 
-            <div class="row" style="justify-content: center;">
+            <div class="row" style="justify-content: center">
               <div
                 class="col-xl-4 pictos-main-container responsive-daily"
                 data-aos="fade-up"
@@ -411,7 +423,7 @@
           <div class="row gy-4">
             <div class="">
               <p class="p-project-description">
-                Les membres de notre équipe ont une mission commune: veiller au
+                Les membres de notre équipe ont une mission commune : veiller au
                 bien-être, à l'épanouissement et à l'autonomie de l'enfant au
                 sein du groupe et de son environnement. Grâce à une équipe
                 pluridisciplinaire, différentes expertises sont représentées
@@ -634,13 +646,21 @@
           <p><span>Tarifs et Aides</span></p>
         </div>
         <p class="p-project-description">
-          Nos tarifs sont calculés en fonction du nombre d'heures et de jours que vous choisissez pour l'accueil de vos enfants. Ce nombre est défini ensemble selon vos besoins et figure dans un contrat d'accueil valable une année. Les couches et les repas (lait excepté) sont offerts.
+          Nos tarifs sont calculés en fonction du nombre d'heures et de jours
+          que vous choisissez pour l'accueil de vos enfants. Ce nombre est
+          défini ensemble selon vos besoins et figure dans un contrat d'accueil.
+          Les couches et les repas (lait excepté) sont offerts.
         </p>
         <p class="p-project-description">
-         En cas de recours à une micro-crèche, votre CAF prend en charge une partie de votre dépense à travers le Complément Libre Choix de Garde (CMG). Pour calculer votre aide, vous pouvez consulter le site de la CAF. 
+          En cas de recours à une micro-crèche, votre CAF prend en charge une
+          partie de votre dépense à travers le Complément Libre Choix de Garde
+          (CMG). Pour calculer votre aide, vous pouvez consulter le site de la
+          CAF.
         </p>
         <div class="text-center">
-          <a href="https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-personnelle/le-complement-de-libre-choix-du-mode-de-garde-cmg" class="more-btn cta-project"
+          <a
+            href="https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-personnelle/le-complement-de-libre-choix-du-mode-de-garde-cmg"
+            class="more-btn cta-project"
             >CAF<i class="bx bx-chevron-right"></i
           ></a>
         </div>
@@ -655,7 +675,12 @@
           </div>
 
           <div class="mb-3">
-            <iframe style="border: 0; width: 100%; height: 350px" src="https://www.google.com/maps/d/u/0/embed?mid=10J4sqseADd4u_fS_Oi0VBSEU7L-XDDU&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+            <iframe
+              style="border: 0; width: 100%; height: 350px"
+              src="https://www.google.com/maps/d/u/0/embed?mid=10J4sqseADd4u_fS_Oi0VBSEU7L-XDDU&ehbc=2E312F&noprof=1"
+              width="640"
+              height="480"
+            ></iframe>
           </div>
 
           <!-- End Google Maps -->
@@ -678,7 +703,6 @@
                 <div>
                   <h3>Nous envoyer un email</h3>
                   <p><span id="email"></span></p>
-
                 </div>
               </div>
             </div>
@@ -701,7 +725,7 @@
                 <div>
                   <h3>Horaires d'accueil des bureaux</h3>
                   <p>
-                    Lundi - Vendredi : <strong>9h - 17h</strong> <br>
+                    Lundi - Vendredi : <strong>9h - 17h</strong> <br />
                     Samedi - Dimanche : <strong>Fermé</strong>
                   </p>
                 </div>
@@ -711,11 +735,18 @@
           </div>
 
           <form
-            action="forms/contact.php"
-            method="post"
+            action="https://api.web3forms.com/submit"
+            method="POST"
             role="form"
             class="php-email-form p-3 p-md-4"
           >
+            <!-- Replace with your Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="2bf2114e-6e23-4eee-abe0-f0f16f0a330b"
+            />
+
             <div class="row">
               <div class="col-xl-6 form-group">
                 <input
@@ -757,6 +788,15 @@
                 required
               ></textarea>
             </div>
+
+            <!-- Honeypot Spam Protection -->
+            <input
+              type="checkbox"
+              name="botcheck"
+              class="hidden"
+              style="display: none"
+            />
+
             <div class="my-3">
               <div class="loading">Loading</div>
               <div class="error-message"></div>
@@ -800,7 +840,6 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -808,23 +847,25 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script type="text/javascript">
-      var user = 'contact';
-      var domain = 'bebeboux.fr';
-      var mailtoLink = 'mailto:' + user + '@' + domain;
-      
-      document.getElementById('email').innerHTML = '<a href="' + mailtoLink + '">' + user + '@' + domain + '</a>';
+      var user = "contact";
+      var domain = "bebeboux.fr";
+      var mailtoLink = "mailto:" + user + "@" + domain;
 
-      var phoneNumber = '07 66 81 43 30';
-      var hiddenPhoneNumber = phoneNumber.replace('66', '<span style="display:none;">REMOVE</span>');
-      var elements = document.getElementsByClassName('phone-replacement');
+      document.getElementById("email").innerHTML =
+        '<a href="' + mailtoLink + '">' + user + "@" + domain + "</a>";
+
+      var phoneNumber = "07 66 81 43 30";
+      var hiddenPhoneNumber = phoneNumber.replace(
+        "66",
+        '<span style="display:none;">REMOVE</span>'
+      );
+      var elements = document.getElementsByClassName("phone-replacement");
 
       for (var i = 0; i < elements.length; i++) {
         elements[i].innerHTML = hiddenPhoneNumber;
       }
-    
     </script>
   </body>
 
   <!-- Pictos by Ainul Muttaqin -->
 </html>
-
