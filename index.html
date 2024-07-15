@@ -9,7 +9,7 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.ico" rel="icon" />
+    <link href="assets/img/favicon.png" rel="icon" />
     <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
 
     <!-- Google Fonts -->
@@ -865,8 +865,8 @@
 
       var phoneNumber = "07 66 81 43 30";
       var hiddenPhoneNumber = phoneNumber.replace(
-        "66",
-        '<span style="display:none;">REMOVE</span>'
+        /(\d{2} \d{2})/,
+        '$1<span style="display:none;"> REMOVE</span>'
       );
       var elements = document.getElementsByClassName("phone-replacement");
 
